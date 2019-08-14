@@ -19,7 +19,7 @@ jobs:
       run: ls -la
     - name: GitHub Action for Composer
       uses: pxgamer/composer-action@v1.0.1
-      args:
-        - install
+      with:
+        args: install
     
 
