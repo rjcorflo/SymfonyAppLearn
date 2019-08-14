@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
     
@@ -15,3 +15,10 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: GitHub Action for Composer
+      uses: pxgamer/composer-action@v1.0.1
+      args: install
+    - name: Run a one-line script
+      run: ls -la
+    
+
